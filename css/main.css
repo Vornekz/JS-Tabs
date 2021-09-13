@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Lato-Bold";
+  src: local("Lato-Bold"), url("../fonts/Lato-Bold/Lato-Bold.ttf") format("ttf"), url("../fonts/Lato-Bold/Lato-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato-Regular";
+  src: local("Lato-Regular"), url("../fonts/Lato-Regular/Lato-Regular.ttf") format("ttf"), url("../fonts/Lato-Regular/Lato-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.buyIt {
+  min-height: 100vh;
+  background: url("../img/backgraund.png") #292d3e no-repeat;
+  background-size: cover;
+  font-family: "Lato-Regular";
+}
+
+/*# sourceMappingURL=main.css.map */

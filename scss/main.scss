@@ -1,0 +1,17 @@
+@import "fonts";
+@import "mixins";
+@import "vars";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.buyIt {
+  min-height: 100vh;
+  background: url("../img/backgraund.png") #292d3e  no-repeat;
+  background-size: cover;
+  font-family: "Lato-Regular";
+}
+
