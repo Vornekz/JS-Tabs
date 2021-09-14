@@ -25,7 +25,7 @@
   background-size: cover;
   background-position: bottom;
   font-family: "Lato-Regular";
-  font-size: 14px;
+  font-size: 18px;
   color: #8d91a3;
 }
 
@@ -35,9 +35,19 @@ svg {
 }
 
 .info {
-  max-width: 60%;
-  min-width: 400px;
+  width: 40%;
+  min-width: 600px;
   margin: 0 auto;
+}
+@media screen and (max-width: 765px) {
+  .info {
+    min-width: 500px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .info {
+    min-width: 300px;
+  }
 }
 
 .iHeader {
@@ -45,6 +55,13 @@ svg {
   justify-content: space-around;
   padding: 0 40px;
   background-color: #2b3040;
+}
+@media screen and (max-width: 576px) {
+  .iHeader {
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+  }
 }
 .iHeader__tab {
   display: flex;
@@ -71,12 +88,28 @@ svg {
   justify-content: space-between;
   padding: 55px 45px;
   background-color: #212534;
-  position: relative;
+}
+@media screen and (max-width: 765px) {
+  .iMain {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .iMain {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .iMain__picture {
   min-width: 100px;
   width: 30%;
   margin-right: 20px;
+}
+@media screen and (max-width: 576px) {
+  .iMain__picture {
+    margin-right: 0;
+    width: 70%;
+  }
 }
 .iMain__picture-img {
   width: 100%;
@@ -108,11 +141,19 @@ svg {
 .iMain__article .artHeader {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 576px) {
+  .iMain__article .artHeader {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 .iMain__article .artHeader__about {
   color: #fff;
   text-transform: capitalize;
+  margin-bottom: 10px;
 }
 .iMain__article .artHeader__about-title {
   font-size: 32px;
@@ -122,31 +163,67 @@ svg {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   border: 2px solid #8d91a3;
   border-radius: 50%;
 }
 .iMain__article .artHeader__about-rating-number {
-  font-size: 20px;
+  font-size: 26px;
 }
 .iMain__article .artHeader__about-rating:after {
   content: "";
   display: block;
   position: absolute;
-  width: 56px;
-  height: 56px;
+  width: 76px;
+  height: 76px;
   border-right: 4px solid #1ae681;
   border-bottom: 4px solid #1ae681;
   border-radius: 50%;
+  animation-name: rotation;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .iMain__article-text {
-  min-width: 250px;
-  margin-bottom: 20px;
+  min-width: 350px;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 768px) {
+  .iMain__article-text {
+    min-width: 250px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .iMain__article-text {
+    min-width: 180px;
+    text-align: center;
+  }
 }
 .iMain__article .artFooter {
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .iMain__article .artFooter {
+    flex-direction: column;
+  }
+}
+.iMain__article .artFooter__price {
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 576px) {
+  .iMain__article .artFooter__price {
+    text-align: center;
+  }
 }
 .iMain__article .artFooter__price-discount {
   font-family: "Lato-Bold";
@@ -164,6 +241,11 @@ svg {
   background-color: #13e28d;
   text-transform: uppercase;
   color: #fff;
+}
+@media screen and (max-width: 576px) {
+  .iMain__article .artFooter__button {
+    margin: 0 auto;
+  }
 }
 
 .iMainShow {
