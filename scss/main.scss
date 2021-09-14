@@ -45,12 +45,12 @@ svg {
     padding: 5% 0;
     margin: 0 20px;
     width: 30%;
+    fill: #8d91a3;
 
     &-svg {
       width: 20px;
       height: 20px;
       margin-bottom: 10px;
-      fill: #8d91a3;
     }
 
     &-name {
@@ -62,10 +62,11 @@ svg {
 }
 
 .iMain {
-  display: flex;
+  display: none;
   justify-content: space-between;
   padding: 55px 45px;
   background-color: #212534;
+  position: relative;
 
   &__picture {
     min-width: 100px;
@@ -75,6 +76,7 @@ svg {
     &-img {
       width: 100%;
       height: 80%;
+      margin-bottom: 10px;
 
       img {
         object-fit: contain;
@@ -170,4 +172,22 @@ svg {
     }
   }
 }
+
+.iMainShow {
+  display: flex;
+}
+
+div .addWhite {
+  color: #fff;
+  fill: #fff;
+  border-bottom: 2px solid #fff;
+}
+
+div .picStar .addFill {
+  fill: #c3ab3c
+}
+
+
+
+
 
